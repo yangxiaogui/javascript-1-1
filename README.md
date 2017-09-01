@@ -1,2 +1,47 @@
-# javascript-1-1
-待虐千百遍
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript 练习 01</title>
+</head>
+<body>
+
+    <label>请输入北京今天空气质量：<input id="aqi-input" type="text"></label>
+    <button id="button">确认填写</button>
+
+    <div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
+
+    <script type="text/javascript">
+        (function () {
+            /*
+                在注释下方写下代码
+                给按钮button绑定一个点击事件
+                在事件处理函数中
+                获取aqi-input输入的值，并显示在aqi-display中
+                */
+            var btn = document.getElementById("button");
+            var input = document.getElementById("aqi-input");
+            var display = document.getElementById("aqi-display");
+
+            btn.onclick = function () {
+                //var info = input.value;
+                display.innerHTML = input.value;
+                //if (info == "") {
+                //    display.innerHTML = "您还未填入任何信息";
+                //} else {
+                //    display.innerHTML = info;
+                //}
+
+
+            };
+        })();
+      
+
+
+
+
+    </script>
+</body>
+</html>
+```
